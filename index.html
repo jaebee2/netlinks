@@ -13,13 +13,16 @@
         <div class="container">
             <nav>
                 <img src="logo2.PNG" class="logo">
-                <ul>
+                <ul id="sidemenu">
+                    <i class="fas" onclick="closemenu()"></i>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+            
                 </ul>
+                <i class="fas" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -143,16 +146,20 @@
                 
                         <a href="https://github.com/jaebee2?tab=repositories"><i class="fa-brands fa-github"></i></a>
                     </div>
+                    <a href="My cv .pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form >
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright@jibril-bulama@netlinks.com</p>
         </div>
     </div>
     <script>
@@ -169,6 +176,16 @@
              event.currentTarget.classList.add("active-link");
              document.getElementById(tabname).classList.add("active-tab");
 
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px"
         }
     </script>
 </body>

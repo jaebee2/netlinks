@@ -5,6 +5,9 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: #fff;
@@ -204,8 +207,9 @@ nav ul li a:hover::after{
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 20px;
 }
 .layer a{
     margin-top: 20px;
@@ -299,7 +303,7 @@ form btn2{
     font-weight: 300;
     margin-top: 20px;
 }
-.fas{
+nav .fa-solid {
     display: none;
 }
 @media only screen and (max-width:600px){
@@ -310,7 +314,7 @@ form btn2{
     .header-text h1{
         font-size: 30px;
     }
-    .fas{
+   nav .fa-solid{
         display: block;
         font-size: 25px;
     }
@@ -324,12 +328,13 @@ form btn2{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        
     }
     nav ul li{
         display: block;
         margin: 25px;
     }
-.fas{
+nav .fas{
         position: absolute;
         top: 25px;
         left: 25px;

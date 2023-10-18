@@ -360,3 +360,8 @@ nav .fas{
         flex-basis: 100%;
     }
 }
+#msg{
+    color: goldenrod;
+    margin-top: -40px;
+    display: block;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6431bdfb65.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: black;
+            color: goldenrod;
+        }
+
+        h1, h2 {
+            color: goldenrod;
+        }
+
+        section {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project {
+            width: calc(33.33% - 20px);
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .project {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project {
+                width: calc(100% - 20px);
+            }
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project h2 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .project a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.PNG" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="index.html">Contact</a></li>
+            
+                </ul>
+                
+               
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+    <header>
+        <h1>My Project Page</h1>
+        <p>Check out my projects on GitHub</p>
+    </header>
+
+    <section>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>PeerReviewHub aims to revolutionize the peer review experience by leveraging modern technologies to create a dynamic and collaborative platform. By empowering researchers, authors, and reviewers, the platform seeks to contribute to the advancement of knowledge and the improvement of academic and professional publications.</p>
+            <a href="https://github.com/your-username/project1">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>PeerReviewHub aims to revolutionize the peer review experience by leveraging modern technologies to create a dynamic and collaborative platform. By empowering researchers, authors, and reviewers, the platform seeks to contribute to the advancement of knowledge and the improvement of academic and professional publications.</p>
+            <a href="https://github.com/your-username/project1">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>PeerReviewHub aims to revolutionize the peer review experience by leveraging modern technologies to create a dynamic and collaborative platform. By empowering researchers, authors, and reviewers, the platform seeks to contribute to the advancement of knowledge and the improvement of academic and professional publications.</p>
+            <a href="https://github.com/your-username/project1">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>PeerReviewHub aims to revolutionize the peer review experience by leveraging modern technologies to create a dynamic and collaborative platform. By empowering researchers, authors, and reviewers, the platform seeks to contribute to the advancement of knowledge and the improvement of academic and professional publications.</p>
+            <a href="https://github.com/your-username/project1">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>PeerReviewHub aims to revolutionize the peer review experience by leveraging modern technologies to create a dynamic and collaborative platform. By empowering researchers, authors, and reviewers, the platform seeks to contribute to the advancement of knowledge and the improvement of academic and professional publications.</p>
+            <a href="https://github.com/your-username/project1">GitHub Repository</a>
+        </div>
+
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2.</p>
+            <a href="https://github.com/your-username/project2">GitHub Repository</a>
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+</body>
+
+</html>

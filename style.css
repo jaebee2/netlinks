@@ -188,9 +188,13 @@ nav ul li a:hover::after{
     
     
 }
+
+
+
+
 .work{
     border-radius: 10px;
-    position: relative;
+    position: relative ;
     overflow:hidden;
 }
 .work img{
@@ -200,9 +204,9 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .layer{
-    width: 100%;
+    width: fit-content;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),goldenrod);
+    background: linear-gradient(rgba(0,0,0,0.6),white);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -221,6 +225,8 @@ nav ul li a:hover::after{
     font-weight: 300;
     margin-top: 0;
     font-size: 20px;
+    text-align: center;
+   
 }
 .layer a{
     margin-top: 20px;
@@ -239,6 +245,7 @@ nav ul li a:hover::after{
 }
 .work:hover .layer{
     height: 100%;
+    width: 100%;
 }
 .btn{
     display: block;

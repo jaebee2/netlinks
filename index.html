@@ -158,7 +158,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact me</h1>
                     <p><i class="fa-sharp fa-regular fa-paper-plane"></i> jibrilbulama2k@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-phone"></i> +2348076853167</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> +2347025056145</p>
                  <div class="social-icons">
                         <a href="https://www.linkedin.com/in/jibril-bulama-5a103b197?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoePq0RTkRw%2BePvwbKf7WnQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
                 
@@ -177,7 +177,50 @@
                 </div>
             </div>
         </div>
-        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3183d3ce-8632-4671-a1dc-459a934aaa9f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <h1>My Certifications</h1>
+
+  <div id="flex">
+    <!-- Credly Badge -->
+    <div data-iframe-width="150" data-iframe-height="270"
+         data-share-badge-id="3183d3ce-8632-4671-a1dc-459a934aaa9f"
+         data-share-badge-host="https://www.credly.com"></div>
+
+    <!-- Certification Images -->
+    <img class="cert" src="Coursera 55D7SQHLJD6E_page-0001.jpg" alt="Coursera Certificate">
+    <img class="cert" src="comptia.jpg" alt="CompTIA Certificate">
+    <img class="cert" src="zsecurity.jpg" alt="ZSecurity Certificate">
+    <img class="cert" src="edx.PNG" alt="edX Certificate">
+    <img class="cert" src="jsf.PNG" alt="JSF Certificate">
+    <img class="cert" src="It.jpg" alt="IT Certificate">
+    <img class="cert" src="NYSC.jpg" alt="NYSC Certificate">
+  </div>
+
+  <!-- Lightbox for image preview -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Zoomed Certificate" id="lightbox-img">
+  </div>
+
+  <!-- Scripts -->
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <script>
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const certs = document.querySelectorAll('.cert');
+
+    certs.forEach(cert => {
+      cert.addEventListener('click', () => {
+        lightboxImg.src = cert.src;
+        lightbox.classList.add('show');
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.remove('show');
+    });
+  </script>
+       
+
         <footer class="copyright">
             <p>Copyright@jibril-bulama@netlinks.com</p>
         </footer>
